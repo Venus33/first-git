@@ -6,7 +6,7 @@ import java.util.List;
 import dao.UserDao;
 import entity.User;
 /**
- * 实现dao接口中方法的衣蛾操作类
+ * 实现dao接口中方法的操作类
  * @author 美少女专用
  *
  */
@@ -26,6 +26,12 @@ public class UserDaoImpl implements UserDao {
 	@Override
 	public void update(User user) {
 		System.out.println("执行修改用户的操作");
+		
+	}
+
+	@Override
+	public void spl(User user) {
+		System.out.println("执行修改用户操作");
 		
 	}
 
