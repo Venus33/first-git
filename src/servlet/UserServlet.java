@@ -37,9 +37,9 @@ public class UserServlet extends HttpServlet {
 		//页面上获得的所有数据都是string类型，年龄是int类型
 		//需要对数据进行强转(包装类)
 		int age = Integer.parseInt(req.getParameter("age"));
-		user.setName(name);
+		user.setName("张三");
 		//调用实体类中setter方法为私有的属性赋值
-		user.setAge(age);
+		user.setAge(20);
 		us.save(user);
 		
 		
